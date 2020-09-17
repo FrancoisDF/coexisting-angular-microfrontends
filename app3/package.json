@@ -1,5 +1,5 @@
 {
-  "name": "navbar",
+  "name": "app3",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,8 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:single-spa": "ng build --prod --deploy-url /dist/navbar --output-hashing none",
-    "serve:single-spa": "ng serve --disable-host-check --port 4300 --deploy-url http://localhost:4300/ --live-reload false"
+    "build:single-spa": "ng build --prod --deploy-url /dist/app3 --output-hashing none",
+    "serve:single-spa": "ng serve --disable-host-check --port 4203 --deploy-url http://localhost:4203/ --live-reload false"
   },
   "private": true,
   "dependencies": {
@@ -24,12 +24,12 @@
     "@angular/router": "^10",
     "rxjs": "~6.5.5",
     "single-spa": "^5.5.0",
-    "single-spa-angular": "^4.0.0",
+    "single-spa-angular": "^4.3.1",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.6",
+    "@angular-devkit/build-angular": "~0.1001.2",
     "@angular/cli": "^10",
     "@angular/compiler-cli": "^10",
     "@angular/language-service": "^10",
@@ -47,6 +47,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "webpack-merge": "^4.2.1"
   }
 }
